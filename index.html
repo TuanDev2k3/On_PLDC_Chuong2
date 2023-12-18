@@ -8,15 +8,22 @@
     <link rel="icon" type="image/x-icon" href="./Logo_3.jpg">
     <!-- BoxIcon -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <!-- Start Quiz -->
-    <div class="start-btn"><button>Start Quizz</button></div>
+    <div class="start-btn">
+        <button id="de_triet-1">Triết học 1</button>
+        <button id="de_triet-2">Triết học 2</button> 
+        <button id="de_triet-3">Triết học 3</button>
+        <button id="de_triet-4">Triết học 4</button>
+        <button id="de_triet-5">Triết học 5</button>
+    </div>
     <div class="info-box hide">
         <div class="info-title">Welcome To Quiz For Me</div>
         <div class="info-list">
             <li class="info">1. Bạn có 30 giây để trả lời câu hỏi.</li>
-            <li class="info">2. Có tổng cộng 40 câu hỏi cần trả lời.</li>
+            <li class="info">2. Có tổng cộng 30 câu hỏi cần trả lời.</li>
             <li class="info">3. Bạn không thể Exit sau khi nhấn Continue</li>
             <li class="info">4. Bạn đã sẵn sàng cho thử thách chưa.</li>
             <li class="info">5. Số điểm sẽ công bố sau khi bạn hoàn thành.</li>
@@ -28,24 +35,24 @@
     </div>
 
     <!-- App Quiz -->
-    <div class="app hide">
+    <div class="app hide sm:p-[30px] p-4">
         <header>
             <h1>Quiz App</h1>
-            <div class="timer">
-                <span class="time-text">Time: </span>
-                <span class="time-sec">30</span>
-            </div>
         </header>
         
         <div class="quiz">
-            <h2 class="question">Question here</h2>
+            <h2 class="question sm:text-[18px] text-[16px]">Question here</h2>
             <div class="answer-btn">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
+                <button class="btn sm:p-[10px_15px] p-[8px_10px] sm:text-[17px] text-[15px]">Answer 1</button>
+                <button class="btn sm:p-[10px_15px] p-[8px_10px] sm:text-[17px] text-[15px]">Answer 2</button>
+                <button class="btn sm:p-[10px_15px] p-[8px_10px] sm:text-[17px] text-[15px]">Answer 3</button>
+                <button class="btn sm:p-[10px_15px] p-[8px_10px] sm:text-[17px] text-[15px]">Answer 4</button>
             </div>
-            <button id="next-btn">Next</button>
+
+            <div class="flex justify-between">
+                <button class="control-btn bg-red-500 active:bg-red-600" id="back-btn">Back</button>
+                <button class="control-btn bg-green-500 active:bg-green-600" id="next-btn">Next</button>
+            </div>
         </div>
     </div>
 
